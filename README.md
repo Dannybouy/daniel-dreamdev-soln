@@ -1,3 +1,5 @@
+# Moniepoint Analytics Software
+
 ## Daniel's DreamDevs Hackathon - Moniepoint Analytics Software
 
 This is a simple analytics software for Moniepoint. It allows you to analyze the sales data of your business.
@@ -15,6 +17,40 @@ This is a simple analytics software for Moniepoint. It allows you to analyze the
 ### Technologies Used
 
 - Python
+
+## Problem Solving Approach
+
+1. **Understanding the Problem**
+   - Analyzed the transaction file format and structure
+   - Identified the key metrics needed:
+     * Highest sales volume in a day
+     * Highest sales value in a day
+     * Most sold product ID by volume
+     * Highest sales staff ID for each month
+
+2. **Breaking Down the Solution**
+   - Created separate functions for each distinct task:
+     * `prepare_file()`: Parses individual transaction lines
+     * `combine_transaction_products()`: Aggregates product quantities
+     * `combine_transaction_sales_amt()`: Collects all sales amounts
+     * `combine_staff_sales()`: Tracks staff performance
+     * `highest_sales_volume()`: Finds products with maximum sales
+
+3. **Data Processing Strategy**
+   - Used dictionaries to efficiently track running totals
+   - Implemented file handling with proper reset points
+   - Created aggregation functions to combine data across transactions
+
+4. **User Interface Design**
+   - Built an interactive menu system for easy access to metrics
+
+5. **Testing and Validation**
+   - Tested with sample transaction files
+
+
+## Future Improvements
+- Implement the highest hour by average transaction volume feature
+
 
 ### How to run the software
 
