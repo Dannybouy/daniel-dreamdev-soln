@@ -23,7 +23,12 @@ This is a simple analytics software for Moniepoint. It allows you to analyze the
    - On Windows: `python main.py`
    - On Linux/MacOS: `python3 main.py`
 3. Edit the `directory_path` variable in the `main.py` file to the directory containing the sales data on your local machine.
-4. Follow the instructions to analyze the sales data.
+4. Pls note that the software is designed to work with the sales data in a directory of text files with the following format:
+   - salesStaffId
+   - transaction time
+   - The products sold. (format "[productId1:quantity|productId2:quantity]")
+   - sale amount
+5. Follow the instructions in the options menu to analyze the sales data.
 
 ### How to use the software
 
