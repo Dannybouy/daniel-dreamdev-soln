@@ -1,0 +1,17 @@
+# Ignore test case folders
+test-case-1/
+test-case-*/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# IDE
+.vscode/
+.idea/
+
+# Environment
+.env
+venv/
+env/ 
